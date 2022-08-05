@@ -21,10 +21,10 @@
           <li><a href="#articles">Articles</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#features">Features</a></li>
-          <li>
-            <a href="#">Other Links</a>
+          <li class="other-links">
+            <a href="#mega">Other Links</a>
               <!-- start megamenu -->
-              <div class="mega">
+              <div class="mega" id="mega">
                 <div class="image"><img src="images/megamenu.png" alt=""></div>
                 <ul class="links">
                   <li>
@@ -93,7 +93,7 @@
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
             </div>
             <div class="read-more">
-              <a href="">Read More</a>
+              <a href="articles.html" target="_blank">Read More</a>
               <i class="fas fa-long-arrow-alt-right"></i>
             </div>
           </div>
@@ -104,7 +104,7 @@
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
             </div>
             <div class="read-more">
-              <a href="">Read More</a>
+              <a href="articles.html" target="_blank">Read More</a>
               <i class="fas fa-long-arrow-alt-right"></i>
             </div>
           </div>
@@ -115,7 +115,7 @@
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
             </div>
             <div class="read-more">
-              <a href="">Read More</a>
+              <a href="articles.html" target="_blank">Read More</a>
               <i class="fas fa-long-arrow-alt-right"></i>
             </div>
           </div>
@@ -126,7 +126,7 @@
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
             </div>
             <div class="read-more">
-              <a href="">Read More</a>
+              <a href="articles.html" target="_blank">Read More</a>
               <i class="fas fa-long-arrow-alt-right"></i>
             </div>
           </div>
@@ -137,7 +137,7 @@
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
             </div>
             <div class="read-more">
-              <a href="">Read More</a>
+              <a href="articles.html" target="_blank">Read More</a>
               <i class="fas fa-long-arrow-alt-right"></i>
             </div>
           </div>
@@ -148,7 +148,7 @@
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
             </div>
             <div class="read-more">
-              <a href="">Read More</a>
+              <a href="articles.html" target="_blank">Read More</a>
               <i class="fas fa-long-arrow-alt-right"></i>
             </div>
           </div>
@@ -159,7 +159,7 @@
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
             </div>
             <div class="read-more">
-              <a href="">Read More</a>
+              <a href="articles.html" target="_blank">Read More</a>
               <i class="fas fa-long-arrow-alt-right"></i>
             </div>
           </div>
@@ -170,7 +170,7 @@
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
             </div>
             <div class="read-more">
-              <a href="#">Read More</a>
+              <a href="articles.html" target="_blank">Read More</a>
               <i class="fas fa-long-arrow-alt-right"></i>
             </div>
           </div>
@@ -217,7 +217,7 @@
     </div>
     <!-- end gallery -->
     <!-- start Features -->
-    <div class="features">
+    <div class="features" id="features">
       <h2 class="main-heading">Features</h2>
       <div class="container">
         <div class="content">
@@ -611,34 +611,34 @@
     <div class="skills" id="our-skills">
       <h2 class="main-heading">Our Skills</h2>
       <div class="container">
-        <img src="images/skills.png" alt="">
+        <img src="images/skills.png" alt=""> 
         <div class="info">
           <div class="skill">
             <h3>HTML</h3>
             <span>80%</span>
             <div class="progress">
-              <span style="width: 80%"></span>
+              <span style="width: 0" data-width="80%"></span>
             </div>
           </div>
           <div class="skill">
             <h3>CSS</h3>
             <span>85%</span>
             <div class="progress">
-              <span style="width: 85%"></span>
+              <span style="width: 0%" data-width="85%"></span>
             </div>
           </div>
           <div class="skill">
             <h3>JavaScript</h3>
             <span>70%</span>
             <div class="progress">
-              <span style="width: 70%"></span>
+              <span style="width: 0%" data-width="70%"></span>
             </div>
           </div>
           <div class="skill">
             <h3>Python</h3>
             <span>80%</span>
             <div class="progress">
-              <span style="width: 80%"></span>
+              <span style="width: 0%" data-width="80%"></span>
             </div>
           </div>
         </div>
@@ -686,19 +686,19 @@
         <div class="info">
           <div class="time">
             <div class="unit">
-              <span>210</span>
+              <span class="days"></span>
               <span>Days</span>
             </div>
             <div class="unit">
-              <span>12</span>
+              <span class="hours"></span>
               <span>Hours</span>
             </div>
             <div class="unit">
-              <span>50</span>
+              <span class="minuites"></span>
               <span>Minuites</span>
             </div>
             <div class="unit">
-              <span>55</span>
+              <span class="seconds"></span>
               <span>Seconds</span>
             </div>
           </div>
@@ -807,22 +807,22 @@
       <div class="container">
         <div class="box">
           <i class="far fa-user fa-2x fa-fw"></i>
-          <span class="number">300</span>
+          <span class="number" data-want="300">0</span>
           <span class="text">Clients</span>
         </div>
         <div class="box">
           <i class="fas fa-code fa-2x fa-fw"></i>
-          <span class="number">400</span>
+          <span class="number" data-want="400">0</span>
           <span class="text">Projects</span>
         </div>
         <div class="box">
           <i class="fas fa-globe-asia fa-2x fa-fw"></i>
-          <span class="number">12</span>
+          <span class="number" data-want="12">0</span>
           <span class="text">Countries</span>
         </div>
         <div class="box">
           <i class="far fa-money-bill-alt fa-2x fa-fw"></i>
-          <span class="number">500K</span>
+          <span class="number" data-want="500"> 0</span>
           <span class="text">Money</span>
         </div>
       </div>
@@ -913,9 +913,11 @@
           <img src="images/gallery-06.png" alt="" />
         </div>
       </div>
-      <p class="copyright">Made With &#9829; By Abdalrahman</p>
+      <p class="copyright">Made With <span> &#9829;</span> By <a href="mailto:abdalrahman57@gamil.com">Abdalrahman Atef</a></p>
     </div>
       </div>
     </footer>
+    <div class="scroll-up"><i class="fa-solid fa-angle-up"></i></div>
+    <script src="main.js"></script>
   </body>
 </html>
