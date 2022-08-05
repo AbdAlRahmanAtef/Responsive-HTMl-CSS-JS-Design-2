@@ -35,15 +35,21 @@ window.onscroll = () => {
   };
 
   // Fill Progess
-  if (window.scrollY >= progessSection.offsetTop + progessSection.offsetHeight - window.innerHeight) {
+  if (
+    window.scrollY >=
+    progessSection.offsetTop + progessSection.offsetHeight - window.innerHeight
+  ) {
     progessSpans.forEach((span) => {
       span.style.width = span.dataset.width;
-    })
+    });
   }
 
   // Count Up
   let stateSectionOffset = stateSection.offsetTop;
-  if (window.scrollY > stateSectionOffset + stateSection.offsetHeight - window.innerHeight) {
+  if (
+    window.scrollY >
+    stateSectionOffset + stateSection.offsetHeight - window.innerHeight
+  ) {
     if (!started) {
       nums.forEach((num) => countUp(num));
     }
@@ -52,7 +58,7 @@ window.onscroll = () => {
 };
 
 function countUp(el) {
-  let goal = el.dataset.want
+  let goal = el.dataset.want;
   let counter = setInterval(() => {
     el.innerHTML++;
     if (el.innerHTML == goal) {
@@ -60,7 +66,6 @@ function countUp(el) {
     }
   }, 1000 / goal);
 }
-
 
 // Date Count Down
 let targetDate = new Date("Dec 30, 2022 11:59:59").getTime();
@@ -72,12 +77,12 @@ let countDown = setInterval(() => {
   let days = Math.floor(dateDiff / (1000 * 60 * 60 * 24));
 
   // Hours
-  let hours = Math.floor(dateDiff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+  let hours = Math.floor((dateDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
   // Minutes
-  let minutes = Math.floor(dateDiff % (1000 * 60 * 60) / (1000 * 60));
+  let minutes = Math.floor((dateDiff % (1000 * 60 * 60)) / (1000 * 60));
   // Seconds
-  let seconds = Math.floor(dateDiff % (1000 * 60) / (1000));
+  let seconds = Math.floor((dateDiff % (1000 * 60)) / 1000);
 
   document.querySelector(".events .days").innerHTML =
     days < 10 ? `0${days}` : days;
@@ -85,5 +90,10 @@ let countDown = setInterval(() => {
     hours < 10 ? `0${hours}` : hours;
   document.querySelector(".events .minuites").innerHTML =
     minutes < 10 ? `0${minutes}` : minutes;
-  document.querySelector(".events .seconds").innerHTML = seconds < 10 ? `0${seconds}`: seconds;
+  document.querySelector(".events .seconds").innerHTML =
+    seconds < 10 ? `0${seconds}` : seconds;
 }, 1000);
+// Dymanic Year
+document.querySelector(
+  ".events .title"
+).innerHTML = `Tech Masters Event ${new Date().getFullYear()}`;
